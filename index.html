@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather sounds</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1 class="title">Weather sounds</h1>
+
+      <section class="sound-buttons" aria-label="Выбор звука природы">
+        <button
+          type="button"
+          class="sound-button"
+          data-sound="summer"
+          data-audio="assets/summer.mp3"
+          data-background="assets/summer-bg.jpg"
+          aria-label="Летний лес"
+        >
+          <img src="assets/icons/sun.svg" alt="Иконка солнца" />
+        </button>
+
+        <button
+          type="button"
+          class="sound-button"
+          data-sound="rain"
+          data-audio="assets/rain.mp3"
+          data-background="assets/rainy-bg.jpg"
+          aria-label="Дождь"
+        >
+          <img src="assets/icons/cloud-rain.svg" alt="Иконка дождя" />
+        </button>
+
+        <button
+          type="button"
+          class="sound-button"
+          data-sound="winter"
+          data-audio="assets/winter.mp3"
+          data-background="assets/winter-bg.jpg"
+          aria-label="Зимний лес"
+        >
+          <img src="assets/icons/cloud-snow.svg" alt="Иконка снега" />
+        </button>
+      </section>
+
+      <label class="volume" for="volume-control">
+        <span class="sr-only">Громкость</span>
+        <input id="volume-control" type="range" min="0" max="1" step="0.01" value="0.5" />
+      </label>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
